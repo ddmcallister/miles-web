@@ -1,0 +1,42 @@
+#test_note {
+	position: relative;
+	background: url(../img/Music-dotnote.svg) no-repeat; 
+	height: 50px;
+	width: 50px;
+	background-size: contain;
+}
+
+#wrapper {
+	position: relative;
+	width: 500px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: pink;
+}
+
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #7f8c8d;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+/*	z-index: 1;*/
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 10px 40px;
+	border: 10px double #f9f1e9;
+	color: #f9f1e9;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Londrina Outline, sans-serif;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
