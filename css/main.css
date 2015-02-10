@@ -76,30 +76,6 @@ background: rgba(0,0,0,0.01);
 	left: 50%;
 /*	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);}*/
-
-
-.cn-wrapper {
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	z-index: 10;
-	margin-top: -13em;
-	margin-left: -13.5em;
-	width: 27em;
-	height: 27em;
-	border-radius: 50%;
-	background: transparent;
-	opacity: 0;
-	-webkit-transition: all .3s ease 0.3s;
-	-moz-transition: all .3s ease 0.3s;
-	transition: all .3s ease 0.3s;
-	-webkit-transform: scale(0.1);
-	-moz-transform: scale(0.1);
-	transform: scale(0.1);
-	pointer-events: none;
-	overflow: hidden;
-}
-
 .cn-button {
 	position: absolute;
 	top: 100%;
@@ -120,8 +96,8 @@ background: rgba(0,0,0,0.01);
 	font-size: 1.5em;
 	text-transform: uppercase;
 	cursor: pointer;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+/*	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;*/
 }
 
 .cn-button:hover,
@@ -130,7 +106,31 @@ background: rgba(0,0,0,0.01);
   background-color: #222;
 }
 
+.cn-wrapper {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	z-index: 10;
+	margin-top: -13em;
+	margin-left: -13.5em;
+	width: 27em;
+	height: 27em;
+/*	background: transparent;
+	opacity: 0;*/
+	/*below is for transition that closes/hides nav behind button*/
+	-webkit-transition: all .3s ease 0.3s;
+	-moz-transition: all .3s ease 0.3s;
+	transition: all .3s ease 0.3s;
+	-webkit-transform: scale(0.1);
+	-moz-transform: scale(0.1);
+	transform: scale(0.1);
+	pointer-events: none;
+	overflow: hidden;
+}
+
 .cn-wrapper:after {
+/*	background-color: #F8F1E9;
+	opacity: 0;*/
 	color: transparent;
 	content: ".";
 	display: block;
@@ -143,7 +143,7 @@ background: rgba(0,0,0,0.01);
 	top: 50%;
 	margin-top: -3.1em;
 	border-radius: 50%;
-	z-index: 10;
+	z-index: 12;
 }
 
 .cn-wrapper li {
@@ -165,23 +165,22 @@ background: rgba(0,0,0,0.01);
 	-webkit-transform-origin: 100% 100%;
 	-moz-transform-origin: 100% 100%;
 	transform-origin: 100% 100%;
-	 pointer-events: none;
+	pointer-events: none;
 }
 
-.cn-wrapper li a {
+li {
   position: absolute;
-  position: fixed; /* fix the "displacement" bug in webkit browsers when using tab key */
-  right: -7.25em;
+  position: fixed;
   bottom: -7.25em;
   display: block;
   width: 14.5em;
   height: 14.5em;
-  border-radius: 50%;
-  background: #E2DDD9;
+/*  border-radius: 50%;*/
+  background: transparent;
   background: -webkit-radial-gradient(transparent 35%, #E2DDD9 35%);
   background: -moz-radial-gradient(transparent 35%, #E2DDD9 35%);
   background: radial-gradient(transparent 35%, #E2DDD9 35%);
-  color: #fff;
+  color: black;
   text-align: center;
   text-decoration: none;
   font-size: 1.2em;
@@ -189,24 +188,53 @@ background: rgba(0,0,0,0.01);
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
-  -webkit-transform: skew(-60deg) rotate(-84deg) scale(1);
-  -moz-transform: skew(-60deg) rotate(-84deg) scale(1);
-  transform: skew(-60deg) rotate(-84deg) scale(1);
+  -webkit-transform: rotate(-84deg) skew(-60deg) scale(1);
+  -moz-transform: rotate(-84deg) skew(-60deg) scale(1);
+  transform: scale(1);
   pointer-events: auto;
 }
 
-.cn-wrapper li a span {
+
+/* a  {
 	position: relative;
 	top: 1.8em;
 	display: block;
 	font-size: .5em;
 	font-weight: 700;
 	text-transform: uppercase;
+	transform: rotate(-84deg) skew(0);
+	transform-origin: 100% 100%;
+}*/
+/*below seemed to be working somewhat*/
+a {
+position: relative;
+display: block;
+font-size: .5em;
+font-weight: 700;
+top: -4em;
+text-align: left;
+text-transform: uppercase;
+transform: rotate(-84deg) skew(30deg);
+transform-origin: 100% 100%;
 }
+/*or -
+a {
+position: relative;
+width: 40%;
+display: block;
+font-size: .5em;
+top: 17em;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+transform: rotate(-184deg) skew(-50deg);
+transform-origin: 100% 100%;
+}
+*/
 
-.cn-wrapper li a:hover,
-.cn-wrapper li a:active,
-.cn-wrapper li a:focus {
+ a:hover,
+ a:active,
+ a:focus {
 	background: radial-gradient(transparent 35%, #449e6a 35%);
 }
 
@@ -225,24 +253,24 @@ background: rgba(0,0,0,0.01);
 .opened-nav li:first-child{
     -webkit-transform: rotate(-10deg);
 	-moz-transform: rotate(-10deg);    
-    transform: rotate(-10deg) skew(60deg);
+    transform: rotate(-30deg) skew(60deg);
 }
 
 .opened-nav li:nth-child(2) {
     -webkit-transform: rotate(15deg);
     -moz-transform: rotate(15deg);    
-    transform: rotate(15deg) skew(60deg);
+    transform: rotate(0deg) skew(60deg);
 }
 .opened-nav li:nth-child(3) {
     -webkit-transform: rotate(40deg);
 	-moz-transform: rotate(40deg);    
-    transform: rotate(40deg)skew(60deg);
+    transform: rotate(30deg)skew(60deg);
 }
 
 .opened-nav li:nth-child(4){
     -webkit-transform: rotate(65deg);
 	-moz-transform: rotate(65deg);
-    transform: rotate(65deg) skew(60deg);
+    transform: rotate(60deg) skew(60deg);
 }
 
 .opened-nav li:nth-child(5){
@@ -254,17 +282,17 @@ background: rgba(0,0,0,0.01);
 .opened-nav li:nth-child(6){
     -webkit-transform: rotate(115deg);
 	-moz-transform: rotate(115deg);
-    transform: rotate(115deg) skew(60deg);
+    transform: rotate(120deg) skew(60deg);
 }
 .opened-nav li:nth-child(7){
     -webkit-transform: rotate(140deg);
 	-moz-transform: rotate(140deg);    
-    transform: rotate(140deg) skew(60deg);
+    transform: rotate(150deg) skew(60deg);
 }
 .opened-nav li:nth-child(8){
     -webkit-transform: rotate(165deg);
     -moz-transform: rotate(165deg);
-    transform: rotate(165deg) skew(60deg);
+    transform: rotate(180deg) skew(60deg);
 }
 
 
@@ -283,9 +311,9 @@ background: rgba(0,0,0,0.01);
 
 
 
-.sample {
+/*.sample {
 	background-color: #E2DDD9;
 	background-color: #F8F1E9;
 	font-family: Esteban, serif;
-}
+}*/
 

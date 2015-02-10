@@ -44,10 +44,6 @@ $(".cn-button").click(function() {
       this.innerHTML = "Menu";
     }
     open = !open;
-
-    function closeWrapper(){
-    $(".cn-wrapper").removeClass('opened-nav');
-  }
 });
 
 }
