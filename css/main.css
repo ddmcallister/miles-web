@@ -230,46 +230,39 @@ div {
 .opened-nav li:first-child{
     -webkit-transform: rotate(-20deg) skew(60deg);
 	-moz-transform: rotate(-20deg) skew(60deg);    
-    transform: rotate(-20deg) skew(60deg);
+    transform: rotate(-5deg) skew(60deg);
 }
 
 .opened-nav li:nth-child(2) {
     -webkit-transform: rotate(12deg) skew(60deg);
     -moz-transform: rotate(12deg) skew(60deg); 
     -ms-transform: rotate(12deg) skew(60deg);   
-    transform: rotate(12deg) skew(60deg);
+    transform: rotate(27deg) skew(60deg);
 }
 .opened-nav li:nth-child(3) {
     -webkit-transform: rotate(44deg) skew(60deg);
 	-moz-transform: rotate(44deg) skew(60deg);
 	-ms-transform: rotate(44deg) skew(60deg);    
-    transform: rotate(44deg) skew(60deg);
+    transform: rotate(59deg) skew(60deg);
 }
 
 .opened-nav li:nth-child(4){
 	-webkit-transform: rotate(76deg) skew(60deg);
 	-moz-transform: rotate(76deg) skew(60deg);
 	-ms-transform: rotate(76deg) skew(60deg);
-	transform: rotate(76deg) skew(60deg);
+	transform: rotate(91deg) skew(60deg);
 }
 
 .opened-nav li:nth-child(5){
 	-webkit-transform: rotate(108deg) skew(60deg);
 	-moz-transform: rotate(108deg) skew(60deg);
 	-ms-transform: rotate(108deg) skew(60deg);
-	transform: rotate(108deg) skew(60deg);
+	transform: rotate(123deg) skew(60deg);
 }
 
 .opened-nav li:nth-child(6) {
 	-webkit-transform: rotate(140deg) skew(60deg);
 	-moz-transform: rotate(140deg) skew(60deg);
 	-ms-transform: rotate(140deg) skew(60deg);
-	transform: rotate(140deg) skew(60deg);
-}
-
-.opened-nav li:nth-child(7) {
-	-webkit-transform: rotate(172deg) skew(60deg);
-	-moz-transform: rotate(172deg) skew(60deg);
-	-ms-transform: rotate(172deg) skew(60deg);
-	transform: rotate(172deg) skew(60deg);
+	transform: rotate(155deg) skew(60deg);
 }
