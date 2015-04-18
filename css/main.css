@@ -8,9 +8,9 @@
 }
 
 body {
-	background-color: #f1f4f3; 
+	background-color: #e9f2f9;
 	font-family: 'Lato', Arial, sans-serif;
-	margin-top: 8em;
+	margin-top: 12em;
 }
 
 html, body {
@@ -250,4 +250,22 @@ h2 {
 	margin: 4em 0 0 0;
 	text-align: center;
 	color: #506266;
+}
+
+#equip_img {
+width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-filter: opacity(.7) ;
+  filter: opacity(.7);
+}
+
+#equip_pg {
+background: #e9f2f9 no-repeat center;
+margin-top: 0;
+}
+
+.equip {
+
+
 }
