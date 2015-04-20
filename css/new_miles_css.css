@@ -1,0 +1,58 @@
+hr {
+}
+
+h2 {
+	margin-top: 0;
+}
+
+
+.horizontal {
+  transform: rotate(90deg);
+/*  height: 1px;
+  width: 100%;
+  margin-top: 0px;*/
+}
+   
+#spc_1 {
+	margin-top: 3%;
+	border: 1px solid;
+}
+
+#spc_2 {
+	margin-top: 5%;
+	border: 1px solid;
+}
+
+
+#hor_1 {
+  margin-left:5%;
+}
+
+#hor_2 {
+  margin-left: 18%;
+}
+
+#hor_3 {
+	margin-left: 30%;
+}
+
+.vertical {
+  height: 1px;
+  width: 100%;
+}
+
+/*#ver_1 {
+	margin-top: 0%;
+}
+
+#ver_2 {
+	margin-top: 7%;
+}*/
+
+#ver_3 {
+	margin-top: 17%;
+}
+
+#ver_4 {
+	margin-top: 22%;
+}
