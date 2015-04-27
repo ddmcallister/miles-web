@@ -50,6 +50,7 @@ h2 {
 	background: #a9c1d9;
 }
 
+
 #name:first-child:first-letter {
 	float: left;
 	font-size: 2.5em;
@@ -68,8 +69,8 @@ h2 {
 
 .cn-button {
 	position: absolute;
-  	bottom: 115%;
-  	left: 75%;
+	bottom: 85%;
+  	left: 80%;
 	z-index: 11;
 	margin-top: -2.25em;
 	margin-left: -2.25em;
@@ -81,6 +82,7 @@ h2 {
 	background: transparent;
 	background-color: #fff;
 	color: #a9c1d9;
+	border: 2px solid;
 	text-align: center;
 	font-weight: 700;
 	font-size: 1.5em;
@@ -90,8 +92,8 @@ h2 {
 
 .cn-wrapper {
 	position: absolute;
-	top: -28%;
-  	left: 75%;
+	top: -2.5%;
+  	left: 80%;
 	z-index: 10;
 	margin-top: -13em;
 	margin-left: -13.5em;

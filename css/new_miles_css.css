@@ -1,6 +1,9 @@
 * {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+body {
 	font-family: 'Raleway', Arial, sans-serif;
 }
 
@@ -24,9 +27,10 @@
 	padding: .5em .25em;
 }
 
-#cell-1, #cell-2, #cell-5, #cell-9, #cell-11, #cell-13 {
+#cell-2, #cell-5, #cell-9, #cell-11, #cell-13 {
 	flex: 0 1 auto;
 }
+
 
 #cell-8 {
 	flex: 0 1 10%
@@ -44,7 +48,7 @@
 	flex: 0 1 25%;
 }
 
-#cell-6 {
+#cell-1, #cell-6 {
 	flex: 0 1 35%;
 }
 
@@ -56,4 +60,85 @@
 	margin: 4em 0 0 0;
 	text-align: center;
 	color: #506266;
+}
+
+#playa {
+	margin: 0 auto;
+	background-color: #1b325f;
+	width: 640px;
+	height:360px;
+	color: white;
+	font-family: 'Dancing Script', Arial, sans-serif;
+	font-size: 6em;
+	text-align: center;
+	line-height: 360px;
+}
+
+#vid-list {
+	color: #506266;
+	list-style-type: none;
+	font-size: 1.25em;
+	margin: 2em; 
+	line-height: 1.5em;
+	text-align: center;	
+}
+
+
+.vid-select {
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.main-pic {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: inline-flex;
+  	flex-flow: row nowrap;
+
+}
+
+
+.flex-pic-container {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: inline-flex;
+  	flex-flow: row nowrap;
+}
+
+#mainImg {
+	height: 400px;
+	width: 610px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#center {
+	height: 400px;
+	width: 610px;
+	background-color: black;
+	overflow: hidden;
+}
+
+.thumbnail {
+	height: 100px;
+	width: 100px;
+	background-size: cover;
+	background-color: blue;
+	cursor: pointer;
+}
+
+.thumbnail:hover {
+	opacity: .5;
+}
+
+.controls {
+	font-size: 3em;
+	padding: .5em;
+	cursor: pointer;
+}
+
+
 
