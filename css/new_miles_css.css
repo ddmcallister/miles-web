@@ -4,15 +4,21 @@
 }
 
 body {
-	font-family: 'Raleway', Arial, sans-serif;
+/*	font-family: 'Raleway', Arial, sans-serif;*/
+	font-family: 'Italiana', serif;
+	margin: 2em;
+}
+
+a {
+	color: #1b325f;
 }
 
 .flex-container {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-  	flex-flow: row nowrap;
-  	justify-content: space-between;
+  	flex-flow: row wrap;
+  	justify-content: center;
   	align-items: stretch;
   	align-content: center;
   	font-size: 3em;
@@ -21,40 +27,30 @@ body {
 }
 
 .flex-item {
-	background-color: #a9c1d9;
+	background-color: #e9f2f9;
 	text-align: center;
 	margin: .1em;
 	padding: .5em .25em;
+	min-width: 3em;
+	min-height: 2.5em;
 }
 
-#cell-2, #cell-5, #cell-9, #cell-11, #cell-13 {
+#cell-2, #cell-4, #cell-6, #cell-8, #cell-10, #cell-12, #cell-13, #cell-14 {
 	flex: 0 1 auto;
 }
 
-
-#cell-8 {
-	flex: 0 1 10%
+#cell-5, #cell-7 {
+	flex: 1 1;
 }
 
-#cell-4 {
-	flex: 0 1 15%;
+#cell-1, #cell-9, #cell-15 {
+	flex: 2 1;
 }
 
- #cell-7, #cell-12 {
-	flex: 0 1 20%;
+#cell-3, #cell-11 {
+	flex: 3 1;
 }
 
-#cell-3, #cell-10, #cell-14, #cell-15{
-	flex: 0 1 25%;
-}
-
-#cell-1, #cell-6 {
-	flex: 0 1 35%;
-}
-
-#cell-2  {
-	flex: 0 1 50%;
-}
 
 .contact_info {
 	margin: 4em 0 0 0;
@@ -62,9 +58,43 @@ body {
 	color: #506266;
 }
 
+.main_nav {
+	margin-top: 2em;
+	font-size: .75em;
+	text-align: center;
+}
+
+.main_nav a {
+	padding-bottom: .1em;  
+	padding-left: 0;
+	margin-right: .75em;
+	font-size: 1.3em;
+	text-decoration: none;
+	font-weight: 200;
+}
+
+.faded {
+	color: #7B8F8A;
+}
+
+.here {
+	color: #00B4CC;
+	border-bottom: none;
+	cursor: text;
+}
+
+.not_here {
+	border-bottom: 1px solid #D8D8D8;;
+}
+
+#about_img {
+	float: left;
+	margin: 0 2em 1em 0;
+}
+
 #playa {
 	margin: 0 auto;
-	background-color: #1b325f;
+	background-color: #031634;
 	width: 640px;
 	height:360px;
 	color: white;
@@ -97,15 +127,16 @@ body {
 	display: -webkit-flex;
 	display: inline-flex;
   	flex-flow: row nowrap;
+  	justify-content: center;
 
 }
-
 
 .flex-pic-container {
 	display: -ms-flexbox;
 	display: -webkit-flex;
-	display: inline-flex;
+	display: flex;
   	flex-flow: row nowrap;
+  	justify-content: center;
 }
 
 #mainImg {
@@ -113,13 +144,14 @@ body {
 	width: 610px;
 	background-size: cover;
 	overflow: hidden;
+  	justify-content: center;
+  	margin: 0 auto;
 }
 
 #center {
 	height: 400px;
 	width: 610px;
-	background-color: black;
-	overflow: hidden;
+  	margin: 0 auto;
 }
 
 .thumbnail {
