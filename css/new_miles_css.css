@@ -17,6 +17,7 @@ a {
 }
 
 .flex-container {
+	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
@@ -35,35 +36,55 @@ a {
 	padding: .5em .25em;
 	min-width: 3em;
 	min-height: 2.5em;
+	transform: skewX(25deg);
+}
+
+.flex-item > * { 
+	transform: skew(-25deg); 
 }
 
 #cell-2, #cell-4, #cell-6, #cell-8, #cell-10, #cell-12, #cell-13, #cell-14 {
-	flex: 0 1 auto;
+	-webkit-box-flex: 0 0 auto;
+	width: auto;
+	webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
 }
 
 #cell-5, #cell-7 {
-	flex: 1 1;
+	-webkit-box-flex: 1 0 auto;
+	width: 20%;
+	webkit-flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 #cell-1, #cell-9, #cell-15 {
-	flex: 2 1;
+	-webkit-box-flex: 2 0 auto;
+	width: 20%;
+	webkit-flex: 2 0 auto;
+	-ms-flex: 2 0 auto;
+	flex: 2 0 auto;
 }
 
 #cell-3, #cell-11 {
-	flex: 3 1;
+	-webkit-box-flex: 3 0 auto;
+	width: 20%;
+	webkit-flex: 3 0 auto;
+	-ms-flex: 3 0 auto;
+	flex: 3 0 auto;
 }
 
-
 .contact_info {
-	margin: 4em 0 0 0;
+	margin: 3em 0 0 0;
 	text-align: center;
 	color: #506266;
+	line-height: 2em;
 }
 
 #calendar_nav {
   text-align: left;
   margin-bottom: 3em;
-
 }
 
 .main_nav {
@@ -106,7 +127,7 @@ a {
 	width: 640px;
 	height:360px;
 	color: white;
-	font-family: 'Dancing Script', Arial, sans-serif;
+	font-family: 'Dancing Script', Arial, serif;
 	font-size: 6em;
 	text-align: center;
 	line-height: 360px;
