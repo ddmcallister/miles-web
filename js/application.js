@@ -31,27 +31,66 @@ $(".thumbnail").click(function() {
 });
 
 $("#forward").click(function() {
-	var currentImg = $("#mainImg").attr('src');
-	console.log(currentImg);
-
-			var ba = currentImg.replace(/^.*[\\\/]/, '');
-			var r = ba.replace(".jpg", '');
-			var all = r.replace("img", '');
-			if(r == 17){
-     				r = 0;
-     				var img = document.getElementById('mainImg');
-     				img.src = 'img/0.jpg';
-     			}
-			else {
-					r++;
-					newVar = "img/" + r + ".jpg";
-					var img = document.getElementById('mainImg');
-					img.src = newVar;}
+	var moveDisp = $(".disp").attr('id');
 
 
+	var currentImgFor = $("#mainImg").attr('src');
+	var forwA = currentImgFor.replace(/^.*[\\\/]/, '');
+	var forwB = forwA.replace(".jpg", '');
+	var all = forwB.replace("img", '');
+	if(forwB == 17){
+			forwB = 0;
+			var img = document.getElementById('mainImg');
+			img.src = 'img/0.jpg';
+		}
+	else {
+		forwB++;
+		newVar = "img/" + forwB + ".jpg";
+		var img = document.getElementById('mainImg');
+		img.src = newVar;
+	}
+});
+
+$("#back").click(function() {
+	var currentImgBack = $("#mainImg").attr('src');
+	var backA = currentImgBack.replace(/^.*[\\\/]/, '');
+	var backB = backA.replace(".jpg", '');
+	var all = backB.replace("img", '');
+	if(backB == 0){
+		backB = 17;
+		var img = document.getElementById('mainImg');
+		img.src = 'img/17.jpg';
+	}
+	else {
+		backB--;
+		newVar = "img/" + backB + ".jpg";
+		var img = document.getElementById('mainImg');
+		img.src = newVar;	
+	}
+
+	
 
 });
 
+$(window).load(function() {
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+   
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
 
 }
 

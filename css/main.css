@@ -7,16 +7,34 @@
 	list-style: none;
 }
 
-body {
+/*body {
 	background-color: #fff;
 	font-family: 'Lato', Arial, sans-serif;
-
-}
-
-/*html, body {
-	height: 100%;
 }*/
 
+body {
+	font-family: 'Italiana', serif;
+}
+
+p {
+	font-size: 1.25em;
+}
+
+a {
+	color: #1b325f;
+}
+
+
+.vertical {
+	width: 2px;
+	color: #909d9e;
+	background-color: #909d9e;
+	height: 1em;
+ 	margin: 0px .25em;
+  	border: 0px;
+	display: inline-block;
+	vertical-align: -10%;
+}
 
 a, button {
 	outline: none;
@@ -28,7 +46,7 @@ a {
 
 .component {
 	position: relative;
-	margin: 12em 0 3em 0;
+	margin: 13em 0 2em 0;
 	font-family: 'Lato', Arial, sans-serif;
 	color: #fff;
 }
@@ -179,7 +197,7 @@ h2 {
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.2em;
-	line-height: 2;
+	line-height: 3;
 	-webkit-transform: skew(-60deg) rotate(-75deg) scale(1);
 	-moz-transform: skew(-60deg) rotate(-75deg) scale(1);
 	-ms-transform: skew(-60deg) rotate(-75deg) scale(1);
@@ -193,8 +211,9 @@ h2 {
 	position: relative;
 	top: 1.8em;
 	display: block;
-	font-size: .5em;
+	font-size: .42em;
 	font-weight: 700;
+	color: #506266;
 	text-transform: uppercase;
 }
 
@@ -218,52 +237,59 @@ h2 {
 
 .opened-nav li:first-child{
     -webkit-transform: rotate(-20deg) skew(60deg);
-	-moz-transform: rotate(-20deg) skew(60deg);    
-    transform: rotate(-75deg) skew(60deg);
+	-moz-transform: rotate(-20deg) skew(60deg);
+	-ms-transform: rotate(-20deg) skew(60deg);    
+    transform: rotate(-10deg) skew(60deg);
 }
 
 .opened-nav li:nth-child(2) {
     -webkit-transform: rotate(12deg) skew(60deg);
     -moz-transform: rotate(12deg) skew(60deg); 
     -ms-transform: rotate(12deg) skew(60deg);   
-    transform: rotate(-43deg) skew(60deg);
+    transform: rotate(22deg) skew(60deg);
 }
 .opened-nav li:nth-child(3) {
     -webkit-transform: rotate(44deg) skew(60deg);
 	-moz-transform: rotate(44deg) skew(60deg);
 	-ms-transform: rotate(44deg) skew(60deg);    
-    transform: rotate(-11deg) skew(60deg);
+    transform: rotate(54deg) skew(60deg);
 }
 
 .opened-nav li:nth-child(4){
 	-webkit-transform: rotate(76deg) skew(60deg);
 	-moz-transform: rotate(76deg) skew(60deg);
 	-ms-transform: rotate(76deg) skew(60deg);
-	transform: rotate(21deg) skew(60deg);
+	transform: rotate(86deg) skew(60deg);
 }
 
 .opened-nav li:nth-child(5){
 	-webkit-transform: rotate(108deg) skew(60deg);
 	-moz-transform: rotate(108deg) skew(60deg);
 	-ms-transform: rotate(108deg) skew(60deg);
-	transform: rotate(53deg) skew(60deg);
+	transform: rotate(118deg) skew(60deg);
 }
 
 .opened-nav li:nth-child(6) {
 	-webkit-transform: rotate(140deg) skew(60deg);
 	-moz-transform: rotate(140deg) skew(60deg);
 	-ms-transform: rotate(140deg) skew(60deg);
-	transform: rotate(85deg) skew(60deg);
+	transform: rotate(150deg) skew(60deg);
 }
 
 .contact_info {
-	margin: 4em 0 0 0;
+	margin: 1em 0 0 0;
 	text-align: center;
 	color: #506266;
+	line-height: 2em;
+	font-size: 1.25em;
 }
 
 p {
 	padding: 2% 0 0 5%;
+}
+
+#pdf {
+	color: #506266;
 }
 
 #equip_img {
