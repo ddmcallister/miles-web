@@ -16,6 +16,32 @@ a {
 	margin: .5em;
 }
 
+#buzz_content{
+	font-size: 1.5em;
+} 
+
+p.buzz_body::first-letter {
+	font-size: 1.75em;
+	vertical-align: sub;
+}
+
+.buzz_src {
+	font-size: .75em;
+	text-transform: lowercase;
+}
+
+h3.heading {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: left;
+	color: #4E4D4A;
+	border-bottom: 1px solid #c6c6c6;
+	padding-bottom: .25em;
+	margin-bottom: 1.5em;
+	margin-top: .75em;
+}
+
 .flex-container {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -46,7 +72,6 @@ a {
 	padding: .5em .25em;
 	min-width: 3em;
 	min-height: 2.5em;
-	transform: skew(5deg);
 }
 
 #trumpet-pic {
@@ -199,7 +224,7 @@ a {
 	margin: 2em;
 }
 
-#mainImg {
+.mainImg {
 	height: 400px;
 	width: 610px;
 	background-size: cover;
