@@ -196,11 +196,18 @@ a {
 	font-size: 1.25em;
 	margin: 2em; 
 	line-height: 1.5em;
-	text-align: center;	
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;	
+	flex-flow: row wrap;
 }
 
 .vid-select {
 	cursor: pointer;
+	margin-right: 1em;
+	text-decoration: underline;
 }
 
 .hide {
@@ -232,6 +239,17 @@ a {
   	justify-content: center;
   	margin: 0 auto;
 }
+
+#slider {
+  margin: 0 0 1.75em;
+}
+
+.topmain_nav {
+	font-size: 1em;
+	text-align: right;
+	margin: 1em;
+}
+
 
 #center {
 	height: 400px;

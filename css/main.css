@@ -24,6 +24,15 @@ a {
 	color: #1b325f;
 }
 
+#calendar_nav {
+  text-align: left;
+  margin-bottom: 3em;
+}
+
+a {
+	color: #1b325f;
+}
+
 
 .vertical {
 	width: 2px;
@@ -36,13 +45,55 @@ a {
 	vertical-align: -10%;
 }
 
-a, button {
+.contact_info {
+	margin: 3em 0 0 0;
+	text-align: center;
+	color: #506266;
+	line-height: 2em;
+}
+
+#calendar_nav {
+  text-align: left;
+  margin-bottom: 3em;
+}
+
+.main_nav {
+	margin-top: 2em;
+	font-size: .75em;
+	text-align: center;
+}
+
+.main_nav a {
+	padding-bottom: .1em;  
+	padding-left: 0;
+	margin-right: .75em;
+	font-size: 1.3em;
+	text-decoration: none;
+	font-weight: 200;
+}
+
+.faded {
+	color: #7B8F8A;
+}
+
+.here {
+	color: #018790;
+	border-bottom: none;
+	cursor: text;
+}
+
+.not_here {
+	border-bottom: 1px solid #D8D8D8;;
+}
+
+
+/*a, button {
 	outline: none;
 }
 
 a {
 	text-decoration: none;
-}
+}*/
 
 .component {
 	position: relative;
