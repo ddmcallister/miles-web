@@ -23,55 +23,6 @@ $(".vid-select").click(function() {
 
 });
 
-$(".thumbnail").click(function() {
-	if ($(this).attr('src') !== $("#mainImg").attr('src')) {
-		var imgClick = $(this).attr('src');
-		$("#mainImg").attr('src', imgClick);
-	}
-});
-
-$("#forward").click(function() {
-	var moveDisp = $(".disp").attr('id');
-
-
-	var currentImgFor = $("#mainImg").attr('src');
-	var forwA = currentImgFor.replace(/^.*[\\\/]/, '');
-	var forwB = forwA.replace(".jpg", '');
-	var all = forwB.replace("img", '');
-	if(forwB == 17){
-			forwB = 0;
-			var img = document.getElementById('mainImg');
-			img.src = 'img/0.jpg';
-		}
-	else {
-		forwB++;
-		newVar = "img/" + forwB + ".jpg";
-		var img = document.getElementById('mainImg');
-		img.src = newVar;
-	}
-});
-
-$("#back").click(function() {
-	var currentImgBack = $("#mainImg").attr('src');
-	var backA = currentImgBack.replace(/^.*[\\\/]/, '');
-	var backB = backA.replace(".jpg", '');
-	var all = backB.replace("img", '');
-	if(backB == 0){
-		backB = 17;
-		var img = document.getElementById('mainImg');
-		img.src = 'img/17.jpg';
-	}
-	else {
-		backB--;
-		newVar = "img/" + backB + ".jpg";
-		var img = document.getElementById('mainImg');
-		img.src = newVar;	
-	}
-
-	
-
-});
-
 $(window).load(function() {
   $('#carousel').flexslider({
     animation: "slide",
@@ -93,7 +44,5 @@ $(window).load(function() {
 });
 
 }
-
-
 
 $(document).ready(main);

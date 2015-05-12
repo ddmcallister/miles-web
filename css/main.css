@@ -104,6 +104,7 @@ h3.heading {
 	cursor: pointer;
 	margin-right: 1em;
 	text-decoration: underline;
+	display: 
 }
 
 .hide {
@@ -115,6 +116,7 @@ h3.heading {
 	display: -webkit-flex;
 	display: inline-flex;
   	flex-flow: row nowrap;
+  	-webkit-flex-flow: row nowrap;
   	justify-content: center;
 }
 
@@ -227,6 +229,7 @@ h3.heading {
 	display: -webkit-flex;
 	display: flex;	
 	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
 }
 
 #gig_body {
@@ -245,4 +248,32 @@ h3.heading {
 	transform: rotate(90deg);
 	height: 12em;
 }
+
+@media (max-width: 900px) {
+
+	h2 {
+		font-size: 6em;
+	}
+
+	#name:first-child:first-letter {
+	float: none;
+	font-size: 1em;
+	line-height: 1em;
+	}
+
+	#initial {
+		display: inline-block; 
+	}
+
+    #last_name_frag {
+    	display: none;
+    }
+
+    #sub {
+	  font-size: 1.5em;
+	  text-align: center;
+    }
+
+
+	}
 
